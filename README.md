@@ -13,7 +13,7 @@ Descoperirea topologiei unei rețele ajută echipele IT să înțeleagă structu
     - Interfață internă pentru comunicare cu celelalte VM-uri, utilizată pentru mesajele RIP v2.
 - Adrese IP alocate static.
 
-![photo_2024-11-08_09-29-16](https://github.com/user-attachments/assets/fe12eba7-284c-4a35-b1f5-ef7c95c41b2b)
+![photo_2025-01-15_17-34-43](https://github.com/user-attachments/assets/39847956-5564-4e0b-a006-4898353f49e0)
 
   
 #### 2.2 Utilizarea modulului socket pentru comunicarea între mașini virtuale, fără alte module pentru lucrul cu stiva de rețea.
@@ -28,7 +28,6 @@ Descoperirea topologiei unei rețele ajută echipele IT să înțeleagă structu
 Implementarea trebuie să permită setarea unor parametri specifici pentru configurarea funcționării protocolului, cum ar fi:
 - Timpul de actualizare pentru mesaje (update timer).
 - Limita maximă de distanță pentru rute (de exemplu, 15 hop-uri).
-- Timeout pentru expunerea rutelor inactive.
 
 ### 3. Protocolul RIPv2
 Protocolul de Rutare a Informației (RIP, Routing Information Protocol în engleză) este un protocol de rutare de tip distanță-vector ce implică utilizarea ca metrică de rutare a numărului de pași de rutat (hop count). Prin aceasta, RIP previne apariția buclelor de rutare, utilizând o valoare limită maximă ca număr de pași de rutare pe calea de la sursă la destinație. 
@@ -51,3 +50,7 @@ Protocolul de Rutare a Informației (RIP, Routing Information Protocol în engle
 
 #### 4.2 Vizualizarea topologiei de rețea: 
 - Afișarea grafică a topologiei rezultate în urma algoritmului RIP, pentru a vizualiza traseele și distanțele dintre noduri.
+### 5. Bibliografie
+- [RFC 2453 // RFC - Internet Standard](https://datatracker.ietf.org/doc/html/rfc2453)
+- [module socket](https://docs.python.org/3/library/socket.html)
+- [module struct](https://docs.python.org/3/library/struct.html)
